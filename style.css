@@ -1,0 +1,181 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+/* Navigation Styles */
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #337ab7;
+}
+
+/* Main Content Styles */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+main h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+main p {
+    margin-bottom: 1em;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    margin-bottom: 0.5em;
+}
+
+.booking {
+    background-color: #f5f5f5;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.booking h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.booking-form input,
+.booking-form select {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.booking-form button {
+    grid-column: 1 / -1;
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+    background-color: #e65252;
+}
+
+@media (max-width: 768px) {
+    .booking-form {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-form button {
+        grid-column: auto;
+    }
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    main {
+        flex-direction: column;
+    }
+}
